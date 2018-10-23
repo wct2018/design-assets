@@ -1,0 +1,20 @@
+{
+  "name": "wct2018.github.io",
+  "version": "0.0.1",
+  "description": "WordCamp Tokyo 2018 Design Assets",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+  },
+  "repository": "git@github.com:wct2018/wct2018.github.io.git",
+  "author": "featherplain",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^2.2.0"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
+  }
+}
