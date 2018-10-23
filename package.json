@@ -4,7 +4,8 @@
   "description": "WordCamp Tokyo 2018 Design Assets",
   "scripts": {
     "dev": "nuxt",
-    "generate": "nuxt generate",
+    "build": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "repository": "git@github.com:wct2018/wct2018.github.io.git",

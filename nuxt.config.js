@@ -1,4 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/design-assets/'
+  }
+} : {}
+
 module.exports = {
+  ...routerBase,
   head: {
     titleTemplate: '%s - WordCamp Tokyo Design Assets 2018',
     meta: [
